@@ -26,12 +26,25 @@
     "eslint-plugin-mocha": "^4.8.0",
     "eslint-plugin-promise": "^3.0.0",
     "eslint-plugin-standard": "^2.0.0",
+    "global": "^4.3.2",
     "html-webpack-plugin": "^2.28.0",
+    "is-function": "^1.0.1",
     "json-loader": "^0.5.4",
+    "parse-headers": "^2.0.1",
     "style-loader": "^0.13.1",
+    "swarm-js": "^0.1.37",
     "truffle-contract": "^1.1.11",
-    "web3": "^0.20.0",
+    "url-set-query": "^1.0.0",
+    "web3-core-promievent": "^1.0.0-beta.34",
+    "web3-providers-http": "^1.0.0-beta.34",
+    "web3-providers-ipc": "^1.0.0-beta.34",
+    "web3-providers-ws": "^1.0.0-beta.34",
     "webpack": "^2.2.1",
-    "webpack-dev-server": "^2.3.0"
+    "webpack-dev-server": "^2.3.0",
+    "xhr": "^2.5.0",
+    "xhr-request": "^1.1.0"
+  },
+  "dependencies": {
+    "web3": "^1.0.0-beta.34"
   }
 }

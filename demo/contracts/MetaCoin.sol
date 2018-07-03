@@ -23,7 +23,7 @@ contract MetaCoin {
 
 	// 这个构造函数的代码只有在合约创建时被运行,之后就无法调用  它会永远的存储一些信息  （例如：它会永久得存储合约创建者的地址）
 	// 找到【tx.origin (address): 交易发送方地址】会返回的交易发送方的地址，也就是说合约实例创建时会默认为当前交易发送方的余额是10000，单位是仿币
-	function MetaCoin() public {
+	constructor () public {
 		// tx.origin (address): 交易发送方地址
 		balances[tx.origin] = 10000;
 	}
@@ -37,7 +37,7 @@ contract MetaCoin {
 		balances[msg.sender] -= amount;
 		// 在接收者的余额中加入发送值数量
 		balances[receiver] += amount; 
-		Transfer(msg.sender, receiver, amount);
+		emit Transfer(msg.sender, receiver, amount);
 		return true;
 	}
 

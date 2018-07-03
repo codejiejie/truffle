@@ -15,7 +15,7 @@ contract Migrations {
     if (msg.sender == owner) _;
   }
 
-  function Migrations() public {
+  constructor () public {
     // 初始化将发送方赋值给owner保存
     owner = msg.sender;
   }
